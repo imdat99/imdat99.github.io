@@ -2,7 +2,7 @@
 <html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Chào em ♥</title>
+	<title>ANH YÊU TẤT CẢ CÁC EM - CHỈ VẬY THÔI</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/png">
 	<meta name="description" content='Những ngày qua ở bên em anh cảm thấy chẳng còn điều gì khiến anh hạnh phúc hơn thế nữa. Anh không dám nói là sẽ yêu em đến hết cuộc đời này. Nhưng anh dám chắc một điều là: "Anh Yêu Em" chỉ vậy thôi!' />
 	<meta name="keywords" content="Anh yêu em, anh yeu em, thanh yeu an, thành yêu an, nguyễn ngọc thành, nguyen ngoc thanh, nguyễn hoàng phúc an, nguyen hoang phuc an"/>
@@ -53,6 +53,9 @@
 	  var s = today.getSeconds();
 	  m = checkTime(m);
 	  s = checkTime(s);
+	  document.getElementById('gio').innerHTML = h;
+	  document.getElementById('phut').innerHTML = m;
+	  document.getElementById('giay').innerHTML = s;
 	  document.getElementById('txt').innerHTML =
 	  h + ":" + m + ":" + s;
 	  var t = setTimeout(startTime, 1000);
@@ -64,10 +67,11 @@
 	</script>
 	<article id="cloud">
 		<p>
-			<span style="color:#d64f1e;">ANH</span>
-			<span style="color:#c41818;">♥</span>
-			<span style="color:#db3376;">EM</span>
-			<span style="color:#342a2a;"></span>
+			<span style="color:#CCFF99;" id = "gio"></span>
+			<span style="color:#99FF99;">:</span>
+			<span style="color:#66FF99;" id = "phut"></span>
+			<span style="color:#33FF99;">:</span>
+			<span style="color:#00FF99;" id = "giay"></span><br />
 			<span style="color:#ffffff;">CHỈ VẬY THÔI</span>
 		</p>
 	</article>
